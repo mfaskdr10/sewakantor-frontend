@@ -182,9 +182,9 @@ export default function BookOffice() {
               <label htmlFor="name" className="font-semibold">
                 Full Name
               </label>
-              <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A]">
+              <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-sky-700">
                 <img
-                  src="/assets/images/icons/security-user-black.svg"
+                  src="/assets/images/icons/security-user.svg"
                   className="w-6 h-6"
                   alt="icon"
                 />
@@ -206,9 +206,9 @@ export default function BookOffice() {
               <label htmlFor="phone" className="font-semibold">
                 Phone Number
               </label>
-              <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A]">
+              <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-sky-700">
                 <img
-                  src="/assets/images/icons/call-black.svg"
+                  src="/assets/images/icons/call.svg"
                   className="w-6 h-6"
                   alt="icon"
                 />
@@ -230,7 +230,7 @@ export default function BookOffice() {
               <label htmlFor="date" className="font-semibold">
                 Started At
               </label>
-              <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A] overflow-hidden">
+              <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-sky-700 overflow-hidden">
                 <img
                   src="/assets/images/icons/calendar-black.svg"
                   className="w-6 h-6"
@@ -312,7 +312,7 @@ export default function BookOffice() {
             </div>
             <div className="flex items-center justify-between">
               <p className="font-semibold">Grand Total</p>
-              <p className="font-bold text-[22px] leading-[33px] text-[#0D903A]">
+              <p className="font-bold text-[22px] leading-[33px] text-sky-700">
                 Rp{" "}
                 {totalAmountWithUniqeCode.toLocaleString("id", {
                   minimumFractionDigits: 0,
@@ -320,7 +320,7 @@ export default function BookOffice() {
                 })}
               </p>
             </div>
-            <div className="relative rounded-xl p-[10px_20px] gap-[10px] bg-[#000929] text-white">
+            <div className="relative rounded-xl p-[10px_20px] gap-[10px] bg-sky-700 text-white">
               <img
                 src="/assets/images/icons/Polygon 1.svg"
                 className="absolute -top-[15px] right-[10px] "
@@ -380,7 +380,7 @@ export default function BookOffice() {
           <button
             type="submit"
             disabled={isLoading}
-            className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]"
+            className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-sky-700 font-bold text-[#F7F7FD]"
           >
             <span>{isLoading ? "Loading..." : "I’ve Made The Payment"}</span>
           </button>

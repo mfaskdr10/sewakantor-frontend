@@ -105,7 +105,7 @@ export default function CheckBooking() {
             <label htmlFor="name" className="font-semibold">
               Booking TRX ID
             </label>
-            <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A]">
+            <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-sky-700">
               <img
                 src="assets/images/icons/receipt-text-black.svg"
                 className="w-6 h-6"
@@ -129,9 +129,9 @@ export default function CheckBooking() {
             <label htmlFor="phone" className="font-semibold">
               Phone Number
             </label>
-            <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-[#0D903A]">
+            <div className="flex items-center rounded-full border border-[#000929] px-5 gap-[10px] transition-all duration-300 focus-within:ring-2 focus-within:ring-sky-700">
               <img
-                src="assets/images/icons/call-black.svg"
+                src="assets/images/icons/call.svg"
                 className="w-6 h-6"
                 alt="icon"
               />
@@ -152,7 +152,7 @@ export default function CheckBooking() {
           <button
             type="submit"
             disabled={isloading}
-            className="flex items-center justify-center rounded-full p-[12px_30px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]"
+            className="flex items-center justify-center rounded-full p-[12px_30px] gap-3 bg-sky-700 font-bold text-[#F7F7FD]"
           >
             <span className="text-nowrap">
               {isloading ? "Loading" : "Check Booking"}
@@ -193,7 +193,7 @@ export default function CheckBooking() {
                   <h3 className="font-semibold">Full Name</h3>
                   <div className="flex items-center rounded-full px-5 py-3 gap-[10px] bg-[#F7F7FD]">
                     <img
-                      src="assets/images/icons/security-user-black.svg"
+                      src="assets/images/icons/security-user.svg"
                       className="w-6 h-6"
                       alt="icon"
                     />
@@ -204,7 +204,7 @@ export default function CheckBooking() {
                   <h3 className="font-semibold">Phone Number</h3>
                   <div className="flex items-center rounded-full px-5 py-3 gap-[10px] bg-[#F7F7FD]">
                     <img
-                      src="assets/images/icons/call-black.svg"
+                      src="assets/images/icons/call.svg"
                       className="w-6 h-6"
                       alt="icon"
                     />
@@ -278,7 +278,7 @@ export default function CheckBooking() {
                 </div>
                 <div className="flex items-center justify-between">
                   <p className="font-semibold">Total Amount</p>
-                  <p className="font-bold text-[22px] leading-[33px] text-[#0D903A]">
+                  <p className="font-bold text-[22px] leading-[33px] text-sky-700">
                     Rp {bookingDetails.total_amount.toLocaleString("id")}
                   </p>
                 </div>
@@ -315,7 +315,7 @@ export default function CheckBooking() {
                 className="flex items-center justify-center w-full rounded-full border border-[#000929] p-[12px_20px] gap-3 bg-white font-semibold"
               >
                 <img
-                  src="assets/images/icons/call-black.svg"
+                  src="assets/images/icons/call.svg"
                   className="w-6 h-6"
                   alt="icon"
                 />

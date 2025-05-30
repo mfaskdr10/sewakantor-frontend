@@ -13,7 +13,7 @@ export default function Browse() {
         >
           <div
             id="Hero-Text"
-            className="relative flex flex-col w-full max-w-[650px] h-fit rounded-[30px] border border-[#E0DEF7] p-10 gap-[30px] bg-white mt-[70px] ml-[calc((100%-1130px)/2)] z-10"
+            className="relative flex flex-col w-full max-w-[800px] h-fit rounded-[30px] border border-[#E0DEF7] p-10 gap-[30px] bg-white mt-[70px] ml-[calc((100%-1130px)/2)] z-10"
           >
             <div className="flex items-center w-fit rounded-full py-2 px-4 gap-[10px] bg-[#000929]">
               <img
@@ -37,27 +37,27 @@ export default function Browse() {
             <div className="flex items-center gap-5">
               <a
                 href="#"
-                className="flex items-center rounded-full p-[20px_26px] gap-3 bg-[#0D903A]"
+                className="flex items-center rounded-full p-[10px_26px] gap-3 bg-sky-700"
               >
                 <img
                   src="/assets/images/icons/slider-horizontal-white.svg"
-                  className="w-[30px] h-[30px]"
+                  className="w-[20px] h-[20px]"
                   alt="icon"
                 />
-                <span className="font-bold text-xl leading-[30px] text-[#F7F7FD]">
+                <span className="font-bold leading-[30px] text-[#F7F7FD]">
                   Explore Now
                 </span>
               </a>
               <a
                 href="#"
-                className="flex items-center rounded-full border border-[#000929] p-[20px_26px] gap-3 bg-white"
+                className="flex items-center rounded-full border border-[#000929] p-[10px_26px] gap-3 bg-white"
               >
                 <img
                   src="/assets/images/icons/video-octagon.svg"
-                  className="w-[30px] h-[30px]"
+                  className="w-[20px] h-[20px]"
                   alt="icon"
                 />
-                <span className="font-semibold text-xl leading-[30px]">
+                <span className="font-semibold leading-[30px]">
                   Watch Story
                 </span>
               </a>
@@ -74,7 +74,8 @@ export default function Browse() {
             />
           </div>
         </section>
-        <div className="flex flex-col pt-[150px] pb-10 px-[120px] gap-10 bg-[#0D903A]">
+        {/* #0D903A  */}
+        <div className="flex flex-col pt-50 pb-15 px-[120px] gap-10 bg-sky-700">
           <div className="logo-contianer flex items-center justify-center flex-wrap max-w-[1130px] h-[38px] mx-auto gap-[60px]">
             <img src="/assets/images/logos/TESLA.svg" alt="clients logo" />
             <img src="/assets/images/logos/Libra 2.svg" alt="clients logo" />
@@ -88,38 +89,6 @@ export default function Browse() {
               alt="clients logo"
             />
           </div>
-          <div className="flex justify-center gap-[50px]">
-            <div className="flex flex-col gap-[2px] text-center">
-              <p className="text-xl leading-[30px] text-[#F7F7FD]">
-                Comfortable Space
-              </p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
-                580M+
-              </p>
-            </div>
-            <div className="flex flex-col gap-[2px] text-center">
-              <p className="text-xl leading-[30px] text-[#F7F7FD]">
-                Startups Succeed
-              </p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
-                98%
-              </p>
-            </div>
-            <div className="flex flex-col gap-[2px] text-center">
-              <p className="text-xl leading-[30px] text-[#F7F7FD]">Countries</p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
-                90+
-              </p>
-            </div>
-            <div className="flex flex-col gap-[2px] text-center">
-              <p className="text-xl leading-[30px] text-[#F7F7FD]">
-                Supportive Events
-              </p>
-              <p className="font-bold text-[38px] leading-[57px] text-white">
-                139M+
-              </p>
-            </div>
-          </div>
         </div>
       </header>
 
@@ -129,13 +98,12 @@ export default function Browse() {
       {/* Benefits */}
       <section
         id="Benefits"
-        className="flex items-center justify-center w-[1015px] mx-auto gap-[100px] mt-[100px]"
+        className="w-[1015px] mx-auto gap-[100px] mt-[100px]"
       >
-        <h2 className="font-bold text-[32px] leading-[48px] text-nowrap">
-          We Might Good <br />
-          For Your Business
+        <h2 className="font-bold text-[32px] leading-[48px] text-center pb-10">
+          We Might Good For Your Business
         </h2>
-        <div className="grid grid-cols-2 gap-[30px]">
+        <div className="grid grid-cols-3">
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
               <img
@@ -144,14 +112,9 @@ export default function Browse() {
                 alt="icon"
               />
             </div>
-            <div className="flex flex-col gap-[5px]">
-              <p className="font-bold text-lg leading-[27px]">
-                Privacy-First Design
-              </p>
-              <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
-              </p>
-            </div>
+            <p className="font-bold text-lg leading-[27px]">
+              Privacy-First Design
+            </p>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
@@ -161,14 +124,7 @@ export default function Browse() {
                 alt="icon"
               />
             </div>
-            <div className="flex flex-col gap-[5px]">
-              <p className="font-bold text-lg leading-[27px]">
-                Easy Move Access
-              </p>
-              <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
-              </p>
-            </div>
+            <p className="font-bold text-lg leading-[27px]">Easy Move Access</p>
           </div>
           <div className="flex items-center gap-4">
             <div className="flex items-center justify-center shrink-0 w-[70px] h-[70px] rounded-[23px] bg-white overflow-hidden">
@@ -181,9 +137,6 @@ export default function Browse() {
             <div className="flex flex-col gap-[5px]">
               <p className="font-bold text-lg leading-[27px]">
                 Flexibility Spaces
-              </p>
-              <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
               </p>
             </div>
           </div>
@@ -199,9 +152,6 @@ export default function Browse() {
               <p className="font-bold text-lg leading-[27px]">
                 Top-Rated Office
               </p>
-              <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
-              </p>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -216,9 +166,6 @@ export default function Browse() {
               <p className="font-bold text-lg leading-[27px]">
                 Extra Snacks Available
               </p>
-              <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
-              </p>
             </div>
           </div>
           <div className="flex items-center gap-4">
@@ -232,9 +179,6 @@ export default function Browse() {
             <div className="flex flex-col gap-[5px]">
               <p className="font-bold text-lg leading-[27px]">
                 Sustain for Business
-              </p>
-              <p className="text-sm leading-[24px]">
-                Lorem available without even higher tax that cost much
               </p>
             </div>
           </div>

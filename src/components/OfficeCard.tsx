@@ -10,7 +10,7 @@ export default function OfficeCard({ office }: OfficeCardProps) {
     <div className="card">
       <div className="flex flex-col rounded-[20px] border border-[#E0DEF7] bg-white overflow-hidden">
         <div className="thumbnail-container relative w-full h-[200px]">
-          <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-[#0D903A] font-bold text-sm leading-[21px] text-[#F7F7FD]">
+          <p className="absolute top-5 left-5 w-fit rounded-full p-[6px_16px] bg-sky-700 font-bold text-sm leading-[21px] text-[#F7F7FD]">
             Popular
           </p>
           <img
@@ -19,8 +19,8 @@ export default function OfficeCard({ office }: OfficeCardProps) {
             alt="thumbnails"
           />
         </div>
-        <div className="card-detail-container flex flex-col p-5 pb-[30px] gap-4">
-          <h3 className="line-clamp-2 font-bold text-[22px] leading-[36px] h-[72px]">
+        <div className="card-detail-container flex flex-col p-5 pb-[32px] gap-4">
+          <h3 className="line-clamp-2 font-bold text-[22px] leading-[36px] h-[50px]">
             {office.name}
           </h3>
           <div className="flex items-center justify-between">
@@ -40,7 +40,7 @@ export default function OfficeCard({ office }: OfficeCardProps) {
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-end gap-[6px]">
               <img
-                src="/assets/images/icons/location.svg"
+                src="/assets/images/icons/location1.svg"
                 className="w-6 h-6"
                 alt="icon"
               />

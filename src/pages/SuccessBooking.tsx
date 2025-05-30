@@ -64,7 +64,7 @@ export default function SuccessBooking() {
             Anda melalui SMS
           </p>
           <Link to={"/check-booking"}>
-            <div className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-[#0D903A] font-bold text-[#F7F7FD]">
+            <div className="flex items-center justify-center w-full rounded-full p-[16px_26px] gap-3 bg-sky-700 font-bold text-[#F7F7FD]">
               <span>View Booking Details</span>
             </div>
           </Link>

@@ -50,7 +50,7 @@ export default function CityDetails() {
           >
             <h1 className="font-extrabold text-[50px] leading-[60px]">
               Great Office in <br />{" "}
-              <span className="text-[#0D903A]">{city.name} City</span>
+              <span className="text-sky-700">{city.name} City</span>
             </h1>
             <p className="text-lg leading-8 text-[#000929]">
               Kantor yang tepat dapat memberikan impact pekerjaan menjadi lebih
