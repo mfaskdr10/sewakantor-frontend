@@ -4,6 +4,7 @@ import CityDetails from "./pages/CityDetails";
 import BookOffice from "./pages/BookOffice";
 import SuccessBooking from "./pages/SuccessBooking";
 import CheckBooking from "./pages/CheckBooking";
+import Details from "./pages/Details";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Browse />} />
         <Route path="/city/:slug" element={<CityDetails />} />
-        <Route path="/office/:slug" element={<CityDetails />} />
+        <Route path="/office/:slug" element={<Details />} />
         <Route path="/office/:slug/book" element={<BookOffice />} />
         <Route path="/success-booking" element={<SuccessBooking />} />
         <Route path="/check-booking" element={<CheckBooking />} />
