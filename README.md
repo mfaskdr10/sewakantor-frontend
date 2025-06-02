@@ -1,54 +1,60 @@
-# React + TypeScript + Vite
+# SewaKantor Frontend
+Repositori ini merupakan bagian frontend dari aplikasi Sewa Kantor, sebuah platform untuk menyewa ruang kantor secara online. Frontend dibangun menggunakan React, TypeScript, dan Vite untuk memberikan pengalaman pengguna yang cepat dan responsif.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Fitur
+- **Antarmuka Pengguna Interaktif**: Menyediakan UI yang intuitif untuk pencarian dan pemesanan ruang kantor.
 
-Currently, two official plugins are available:
+- **Integrasi API**: Berkomunikasi dengan backend Laravel melalui RESTful API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Routing Dinamis**: Menggunakan React Router untuk navigasi antar halaman.
 
-## Expanding the ESLint configuration
+- **Manajemen State**: Mengelola state aplikasi dengan efisien.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Validasi Formulir**: Validasi input pengguna pada formulir pendaftaran dan login.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Teknologi yang Digunakan
+1. **React**: Library JavaScript untuk membangun antarmuka pengguna.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. **TypeScript**: Superset JavaScript yang menambahkan tipe statis.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+3. **Vite**: Build tool untuk pengembangan frontend yang cepat.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+4. **ESLint**: Alat untuk menjaga konsistensi kode dan menemukan masalah.
+
+5. **React Router**: Library untuk routing di aplikasi React.
+
+### Prasyarat
+Pastikan telah menginstal:
+
+- Node.js (disarankan versi terbaru LTS)
+
+- npm (sudah bawaan dari Node JS) atau yarn
+
+### Langkah Instalasi
+1. Kloning Repositori:
+    ```bash
+   git clone https://github.com/mfaskdr10/sewakantor-frontend.git
+   cd sewakantor-frontend
+2. Instalasi Dependensi:
+    ```bash
+    // Menggunakan npm:
+    npm install
+
+    // Atau menggunakan yarn:
+    yarn install
+3. Menjalankan Aplikasi
+    ```bash
+    Menggunakan npm:
+    npm run dev
+
+    Atau menggunakan yarn:
+    yarn dev
+Aplikasi akan berjalan di http://localhost:5173 secara default.
+
+### Struktur Direktori
+- **public/**: Berisi file statis seperti index.html.
+- **src/**: Berisi kode sumber utama aplikasi.
+- **components/**: Komponen React yang dapat digunakan kembali.
+- **pages/**: Halaman-halaman utama aplikasi.
+- **App.tsx**: Komponen utama aplikasi.
+- **main.tsx**: Titik masuk aplikasi.
